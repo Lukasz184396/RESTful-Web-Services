@@ -1,4 +1,4 @@
-package com.zawadal.restfulwebservice;
+package com.zawadal.restfulwebservice.helloworld;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

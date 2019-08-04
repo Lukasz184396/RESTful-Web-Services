@@ -1,4 +1,4 @@
-package com.zawadal.restfulwebservice;
+package com.zawadal.restfulwebservice.helloworld;
 
 public class HelloWorldBean {
     private String messsage;
