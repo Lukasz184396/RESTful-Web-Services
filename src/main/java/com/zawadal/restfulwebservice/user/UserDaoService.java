@@ -1,4 +1,4 @@
-package com.zawadal.restfulwebservice;
+package com.zawadal.restfulwebservice.user;
 
 import com.zawadal.restfulwebservice.user.User;
 import org.springframework.stereotype.Component;
