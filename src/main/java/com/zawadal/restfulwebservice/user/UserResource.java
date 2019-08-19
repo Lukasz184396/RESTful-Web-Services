@@ -15,13 +15,16 @@ public class UserResource {
     private UserDaoService service;
 
     @GetMapping("/users")
-    public List<User> retriveAllUsers (){
+    public List<User> retriveAllUsers() {
         return service.findAll();
     }
 
     @GetMapping("/users/{id}")
     public User reytiveUser(@PathVariable int id) {
-        return service.findOne(id);
+        User user = service.findOne(id);
+        if(user == null)
+            throw new UsrNotFoundException("id-" + id);
+        return user;
     }
 
     @PostMapping("/users")
