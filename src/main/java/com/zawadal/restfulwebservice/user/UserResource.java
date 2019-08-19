@@ -23,7 +23,7 @@ public class UserResource {
     public User reytiveUser(@PathVariable int id) {
         User user = service.findOne(id);
         if(user == null)
-            throw new UserNotFoundException("id-" + id);
+            throw new UsrNotFoundException("id-" + id);
         return user;
     }
 
